@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+section {
+  scroll-snap-align: start;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    color: aliceblue;
+}
+.header{
+    background-color: black;
+    color: aliceblue;
+    
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.header-wapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    
+}
+.nav-wapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.nav-wapper > a > li{
+    background-color: #cccc;
+    padding:  5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+.nav-wapper > a > li:hover{
+  background-color: #9999;
+  color:white
+}
+.Hero-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url(./assets/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.hero-wapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;  
+       
+}
+.hero-container > h1{
+    font-weight: bolder; 
+    font-size: 50px;
+    
+    color: #b0e0e6;
+}
+.hero-container > p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #f5f5f5;
+    
+
+}
+.education{
+    
+    background-color: #b0e0e6;
+    
+}
+.table-head{
+    padding: 10px;
+}
+.cell-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+
+}
+.table-heads{
+    border-bottom: 1px solid gray;
+}
+.table{
+    background-color: aliceblue;
+}
+.education-wapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.skill{
+    background-color: #f5f5f5;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px 125px;
+}
+.skil-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card > img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100000px;
+    border: 1px solid #333333;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .5) ;
+}
+
+.contact{
+    height: 100vh;
+    background-color: #b0e0e6;
+}
+.contact-contain {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-left,
+  .contact-right {
+    width: 50%;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  input,
+  textarea {
+    padding: 10px 12px;
+    border: 1px solid  #999;
+    border-radius: 10px;
+    outline: none;
+
+  }
+  input:focus,
+  textarea:focus{
+    outline: 1px solid #007bff;
+  }
+  .submit-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.01);
+  }
+  .contact-right h2 {
+    margin-bottom: 30px;
+  }
+  .card-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .contact-left h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .contact-left ul li a {
+    display: flex;
+  }
+  .contact-left ul li a i {
+    font-size: 30px;
+    margin-right: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  .contact-left ul li a span {
+    font-size: 22px;
+    color: #333333;
+    
+  }
+  .contact-left ul li a span:hover{
+    color: #4169e1;
+  }
+  .contact-left ul li a i:hover {
+    transform: scale(1.1);
+    color: #4169e1;
+  }
+
+  .footer{
+    background-color: #cccccc ;
+  }
+ 
+  .footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #36454f;
+    height: 10vh;
+
+  }
+table{
+  border-collapse: collapse;
+}
+td,th{
+  border: 1px solid #ddd;
+}
+tr:hover{
+  background-color: #ddd;
+}
+th{
+  background-color: #04aa6d;
+  color: white;
+}
+.title{
+  text-align: center;
+  padding: 25px 0;
+  font-size: 50px;
+}
+.red{
+  color: crimson;
+}
